@@ -21,12 +21,11 @@ class MemberController extends Controller
     {
         $member = new Member;
 
-        $member->name                           = $request->name;
-        $member->email                          = $request->email;
-        $member->membership-> membership_type   = $request->membership->membership_type;
-        $member->membership_expiration          = $request->membership_expiration;
-        $member->trainer_id                     = $request->trainer_id;
-        $member->membership_type                = $request->membership_type;
+        $member->name                    = $request->name;
+        $member->email                   = $request->email;
+        $member->membership_type         = $request->membership_type;
+        $member->membership_expiration   = $request->membership_expiration;
+        $member->trainer_id              = $request->trainer_id;
 
         $member->save();
 

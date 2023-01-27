@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/memberPage', [MemberController::class, 'index'])->name('memberPage');
-Route::get('/create', [MemberController::class, 'create'])->name('create');
-Route::post('/store', [MemberController::class, 'store'])->name('store');
+Route::get('/create-member', [MemberController::class, 'create'])->name('create-member');
+Route::post('/store-member', [MemberController::class, 'store'])->name('store-member');
 Route::get('/show/{id}', [MemberController::class, 'show'])->name('show');
 Route::get('/editMember/{id}', [MemberController::class, 'edit'])->name('edit');
-Route::post('/update', [MemberController::class, 'update'])->name('update');
+Route::post('/update-member', [MemberController::class, 'update'])->name('update-member');
 Route::get('/destroy/{id}', [MemberController::class, 'destroy'])->name('destroy');
 
 

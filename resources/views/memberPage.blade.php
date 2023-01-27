@@ -21,7 +21,7 @@
       </div>
       <div class="modal-body">
         <div class="card py-5 px-12 mt-3">
-            <form method="POST" action="{{ route('store') }}">
+            <form method="POST" action="{{ route('store-member') }}">
                 @csrf
                 <div class="col-11 mb-3 p-2">
                     <label for="name" class="form-label">Name</label>
@@ -90,7 +90,7 @@
                     <td>{{ $member->id }}</td>
                     <td>{{ $member->name }}</td>
                     <td>{{ $member->email }}</td>
-                    <td>{{ $member->membership->membership_type }}</td>
+                    <td>{{ $member->membership_type }}</td>
                     <td>{{ $member->membership_expiration }}</td>
                     <td>{{ $member->trainer->name }}</td>
                     <th>
